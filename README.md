@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://dawidtt.github.io/Base-apparel/](https://dawidtt.github.io/Base-apparel/)
 
 ## My process
 
