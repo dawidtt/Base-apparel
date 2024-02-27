@@ -1,0 +1,198 @@
+/*
+=================================
+            SHARED CSS
+=================================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 245, 245, 1) 100%
+  );
+}
+#desktop-flex {
+  height: 100%;
+}
+/*
+=================================
+          MAIN CONTAINER
+=================================
+*/
+#main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+=================================
+            HEADER
+=================================
+*/
+
+header img {
+  width: 40%;
+  margin: 30px 0 30px 30px;
+}
+/*
+=================================
+            MAIN IMG
+=================================
+*/
+#main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*
+=================================
+           MAIN
+=================================
+*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: center;
+  height: 100%;
+}
+main h1 {
+  font-size: 2.5rem;
+  padding: 0;
+  letter-spacing: 15px;
+  font-weight: 400;
+}
+main h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+main p {
+  margin: 20px 40px;
+  color: hsl(0, 36%, 70%);
+}
+
+/*
+=================================
+           FORM
+=================================
+*/
+form {
+  display: flex;
+  margin: 40px 40px 0 40px;
+  justify-content: space-between;
+  border-radius: 50px;
+  border: 1px solid hsla(0, 36%, 70%, 0.5);
+}
+input[type="text"] {
+  padding: 15px 20px;
+  width: 70%;
+  border: none;
+  background: transparent;
+  opacity: 0.5;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+body:has(input[type="text"]:focus) form {
+  border: 1px solid hsla(0, 36%, 70%, 1);
+}
+#error-img {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-right: 5px;
+}
+button {
+  width: 20%;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(248, 191, 191, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(248, 191, 191, 1) 0%,
+    rgba(238, 140, 140, 1) 100%
+  );
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  -webkit-box-shadow: 0px 10px 20px -10px rgba(68, 69, 81, 1);
+  -moz-box-shadow: 0px 10px 20px -10px rgba(68, 69, 81, 1);
+  box-shadow: 0px 10px 20px -10px rgba(68, 69, 81, 1);
+  background-color: rgba(255, 225, 225, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 225, 225, 1) 0%,
+    rgba(233, 152, 152, 1) 100%
+  );
+}
+#error-message {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin: 10px 0 0 60px;
+  font-size: 0.7rem;
+  color: rgb(209, 37, 37);
+}
+.hidden {
+  display: none;
+}
+#desktop-img {
+  display: none;
+}
+/*
+=================================
+           BREAKPOINTS
+=================================
+*/
+@media (min-width: 992px) {
+  /*
+=================================
+        DESKTOP FLEX STYLES
+=================================
+*/
+  #desktop-flex {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  #main-container {
+    flex-basis: 70%;
+  }
+  #desktop-main {
+    flex-basis: 30%;
+  }
+  header {
+    margin-left: 15%;
+
+    padding: 20px 30px;
+  }
+  main {
+    text-align: left;
+    margin: 0 15%;
+  }
+  main h1 {
+    margin-left: 40px;
+    font-size: 4rem;
+  }
+  #desktop-img img {
+    height: 100%;
+    width: 100%;
+  }
+}
