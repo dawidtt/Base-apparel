@@ -196,3 +196,9 @@ button:hover {
     width: 100%;
   }
 }
+@media (max-height: 700px) {
+  body {
+    background-color: white;
+    background-image: none;
+  }
+}
